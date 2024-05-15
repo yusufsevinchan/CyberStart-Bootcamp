@@ -1,0 +1,17 @@
+#Python Uygulama 2 - Minimum Öklid Mesafesinin Hesaplanması
+def euclideanDistance(x, y):
+    return (x**2 + y**2) ** 0.5
+
+points = [(5,12), (8, 15), (3,4), (15, 20), (7,15)]
+distances = []
+
+'''
+for point in points:
+    euc_distance = euclideanDistance(point[0], point[1])
+    distances.Append(euc_distance)
+'''
+for x, y in points:
+    euc_distance = euclideanDistance(x, y)
+    distances.append(euc_distance)
+
+print(min(*distances))
